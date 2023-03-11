@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33213.308
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmployeePayrollMultiThreading", "EmployeePayrollMultiThreading.csproj", "{07D2585E-A7E4-46C2-9F17-30011031A38A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestEmployeePayrollMultiThreading", "..\TestEmployeePayrollMultiThreading\TestEmployeePayrollMultiThreading.csproj", "{473EF397-3E0E-4386-B4C5-AC97C1A5688A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{07D2585E-A7E4-46C2-9F17-30011031A38A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{07D2585E-A7E4-46C2-9F17-30011031A38A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{07D2585E-A7E4-46C2-9F17-30011031A38A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{07D2585E-A7E4-46C2-9F17-30011031A38A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{473EF397-3E0E-4386-B4C5-AC97C1A5688A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{473EF397-3E0E-4386-B4C5-AC97C1A5688A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{473EF397-3E0E-4386-B4C5-AC97C1A5688A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{473EF397-3E0E-4386-B4C5-AC97C1A5688A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1820527B-CB6E-4B94-A2EE-9CB1FD4CF067}
+	EndGlobalSection
+EndGlobal
