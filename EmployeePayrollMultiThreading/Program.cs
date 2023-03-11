@@ -29,7 +29,8 @@ namespace EmployeePayrollMultiThreading
                 Console.Clear();
                 Console.WriteLine("Welcome to the Employee Payroll MultiThreading");
                 Console.WriteLine("Please select given options:---\n--------------------------------");
-                Console.WriteLine("1.Add mutliple employee to payrollDB witout thread\n" +
+                Console.WriteLine("1.Add mutliple employee to payrollDB without thread\n" +
+                    "2.Add mutliple employee to payrollDB with thread\n" +
                     "10.Exit\n");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch (option)
@@ -41,6 +42,15 @@ namespace EmployeePayrollMultiThreading
                         DateTime stopdateTime = DateTime.Now;
                         Console.WriteLine("Duation without thread" + (stopdateTime - startdateTime));
                         Console.WriteLine("\nPress any key to continue...... ");
+                        Console.ReadLine();
+                        Console.Clear();
+                        break;
+                    case 2:
+                        Console.Clear();
+                        DateTime startdateTimeThread = DateTime.Now;
+                        employeePayRoll.AddEmployeeToPayrollWithThread(employeeDetails);
+                        DateTime stopdateTimeThread = DateTime.Now;
+                        Console.WriteLine("Duation with thread" + (stopdateTimeThread - startdateTimeThread));
                         Console.ReadLine();
                         Console.Clear();
                         break;

@@ -25,13 +25,21 @@ namespace TestEmployeePayrollMultiThreading
             employeeDetails.Add(new EmployeeDetails(Id: 10, Name: "Kent", Salary: 770000, Gender: 'F', Address: "Agra", PhoneNumber: 7818879856, Department: "IT", BasicPay: 785250, Deductions: 1507, TaxablePay: 2300, IncomeTax: 3200, NetPay: 2600));
 
             //UC1-Ability to add multiple employee to payroll DB using without thread
-
             EmployeePayRollOperations employeePayRollOperation = new EmployeePayRollOperations();
             employeePayRollOperation.AddEmployeeToPayroll(employeeDetails);
             DateTime startdateTime = DateTime.Now;
             employeePayRollOperation.AddEmployeeToPayroll(employeeDetails);
             DateTime stopdateTime = DateTime.Now;
-            Console.WriteLine("Duation without thread" + (stopdateTime - startdateTime));
+            Console.WriteLine("Duation without thread  " + (stopdateTime - startdateTime));
+
+            //UC2-Ability to add multiple employee to payroll DB using with thread
+            EmployeePayRollOperations employeePayRollOperationThread = new EmployeePayRollOperations();
+            employeePayRollOperationThread.AddEmployeeToPayrollWithThread(employeeDetails);
+            DateTime startdateTimeThread = DateTime.Now;
+            employeePayRollOperation.AddEmployeeToPayroll(employeeDetails);
+            DateTime stopdateTimeThread = DateTime.Now;
+            Console.WriteLine("Duation with thread   " + (stopdateTimeThread - startdateTimeThread));
+
         }
     }
 }
